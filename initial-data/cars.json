@@ -1,0 +1,350 @@
+[
+  {
+    "manufacturer": "Toyota",
+    "model": "Corolla",
+    "releaseYear": 2019,
+    "description": "The 2019 Toyota Corolla is a reliable and fuel-efficient compact car that offers a smooth ride and a host of standard safety features.",
+    "numOfRatings": 45,
+    "ratingsAverage": 4.8,
+    "sellers": [
+      {
+        "storeName": "Empire Toyota",
+        "location": "New York",
+        "price": 18000,
+        "telNumber": "+1 212-555-1234"
+      },
+      {
+        "storeName": "LA Toyota Center",
+        "location": "Los Angeles",
+        "price": 18500,
+        "website": "https://la-toyota.com"
+      },
+      {
+        "storeName": "Windy City Toyota",
+        "location": "Chicago",
+        "price": 17500,
+        "website": "https://chicago-toyota.com"
+      }
+    ],
+    "minPrice": 17500
+  },
+  {
+    "manufacturer": "Toyota",
+    "model": "Corolla",
+    "releaseYear": 2020,
+    "description": "The 2020 Toyota Corolla brings new technology and a refined driving experience, maintaining its reputation for reliability.",
+    "numOfRatings": 50,
+    "ratingsAverage": 4.7,
+    "sellers": [
+      {
+        "storeName": "Houston Auto Mall",
+        "location": "Houston",
+        "price": 19000,
+        "telNumber": "+1 713-555-5678"
+      },
+      {
+        "storeName": "Desert Toyota",
+        "location": "Phoenix",
+        "price": 19200,
+        "website": "https://phoenix-toyota.com"
+      },
+      {
+        "storeName": "Philly Toyota Hub",
+        "location": "Philadelphia",
+        "price": 18500,
+        "telNumber": "+1 215-555-7890"
+      }
+    ],
+    "minPrice": 18500
+  },
+  {
+    "manufacturer": "Toyota",
+    "model": "Camry",
+    "releaseYear": 2018,
+    "description": "The 2018 Toyota Camry offers a spacious interior and a smooth ride, with advanced safety features and a strong reputation for durability.",
+    "numOfRatings": 55,
+    "ratingsAverage": 4.6,
+    "sellers": [
+      {
+        "storeName": "Alamo Toyota",
+        "location": "San Antonio",
+        "price": 23000,
+        "website": "https://sanantonio-toyota.com"
+      },
+      {
+        "storeName": "San Diego Auto Sales",
+        "location": "San Diego",
+        "price": 22500,
+        "telNumber": "+1 619-555-1234"
+      },
+      {
+        "storeName": "Dallas Toyota Outlet",
+        "location": "Dallas",
+        "price": 22000,
+        "telNumber": "+1 214-555-5678"
+      }
+    ],
+    "minPrice": 22000
+  },
+  {
+    "manufacturer": "Ford",
+    "model": "Focus",
+    "releaseYear": 2019,
+    "description": "The 2019 Ford Focus combines sporty handling with a comfortable ride, advanced technology, and modern safety features.",
+    "numOfRatings": 40,
+    "ratingsAverage": 4.5,
+    "sellers": [
+      {
+        "storeName": "Austin Ford Center",
+        "location": "Austin",
+        "price": 21000,
+        "website": "https://austin-ford.com"
+      },
+      {
+        "storeName": "Jacksonville Ford Hub",
+        "location": "Jacksonville",
+        "price": 20800,
+        "telNumber": "+1 904-555-7890"
+      },
+      {
+        "storeName": "Fort Worth Ford Sales",
+        "location": "Fort Worth",
+        "price": 20500,
+        "website": "https://fortworth-ford.com"
+      }
+    ],
+    "minPrice": 20500
+  },
+  {
+    "manufacturer": "Ford",
+    "model": "Mustang",
+    "releaseYear": 2021,
+    "description": "The 2021 Ford Mustang offers high performance and iconic style, with powerful engine options and modern technology.",
+    "numOfRatings": 30,
+    "ratingsAverage": 4.9,
+    "sellers": [
+      {
+        "storeName": "Columbus Mustang Center",
+        "location": "Columbus",
+        "price": 35000,
+        "telNumber": "+1 614-555-1234"
+      },
+      {
+        "storeName": "Queen City Ford",
+        "location": "Charlotte",
+        "price": 34000,
+        "website": "https://charlotte-ford.com"
+      },
+      {
+        "storeName": "Golden Gate Ford",
+        "location": "San Francisco",
+        "price": 35500,
+        "website": "https://sanfrancisco-ford.com"
+      }
+    ],
+    "minPrice": 34000
+  },
+  {
+    "manufacturer": "Ford",
+    "model": "Escape",
+    "releaseYear": 2020,
+    "description": "The 2020 Ford Escape provides a versatile and comfortable ride with plenty of space and advanced safety features.",
+    "numOfRatings": 25,
+    "ratingsAverage": 4.4,
+    "sellers": [
+      {
+        "storeName": "Indy Ford",
+        "location": "Indianapolis",
+        "price": 28000,
+        "website": "https://indianapolis-ford.com"
+      },
+      {
+        "storeName": "Seattle Ford Sales",
+        "location": "Seattle",
+        "price": 27500,
+        "telNumber": "+1 206-555-5678"
+      },
+      {
+        "storeName": "Denver Ford Center",
+        "location": "Denver",
+        "price": 27000,
+        "telNumber": "+1 303-555-7890"
+      }
+    ],
+    "minPrice": 27000
+  },
+  {
+    "manufacturer": "Hyundai",
+    "model": "Elantra",
+    "releaseYear": 2019,
+    "description": "The 2019 Hyundai Elantra offers a stylish design, a comfortable ride, and a host of standard features at an attractive price.",
+    "numOfRatings": 35,
+    "ratingsAverage": 4.6,
+    "sellers": [
+      {
+        "storeName": "Capitol Hyundai",
+        "location": "Washington",
+        "price": 19000,
+        "telNumber": "+1 202-555-1234"
+      },
+      {
+        "storeName": "Boston Hyundai Hub",
+        "location": "Boston",
+        "price": 18800,
+        "website": "https://boston-hyundai.com"
+      },
+      {
+        "storeName": "El Paso Hyundai Center",
+        "location": "El Paso",
+        "price": 18500,
+        "website": "https://elpaso-hyundai.com"
+      }
+    ],
+    "minPrice": 18500
+  },
+  {
+    "manufacturer": "Hyundai",
+    "model": "Elantra",
+    "releaseYear": 2020,
+    "description": "The 2020 Hyundai Elantra introduces updated features and refined styling, continuing its reputation for value and reliability.",
+    "numOfRatings": 60,
+    "ratingsAverage": 4.7,
+    "sellers": [
+      {
+        "storeName": "Nashville Hyundai Sales",
+        "location": "Nashville",
+        "price": 19500,
+        "website": "https://nashville-hyundai.com"
+      },
+      {
+        "storeName": "Detroit Hyundai Center",
+        "location": "Detroit",
+        "price": 19300,
+        "telNumber": "+1 313-555-5678"
+      },
+      {
+        "storeName": "Memphis Hyundai Hub",
+        "location": "Memphis",
+        "price": 19000,
+        "telNumber": "+1 901-555-7890"
+      }
+    ],
+    "minPrice": 19000
+  },
+  {
+    "manufacturer": "Hyundai",
+    "model": "Santa Fe",
+    "releaseYear": 2021,
+    "description": "The 2021 Hyundai Santa Fe offers a spacious interior, advanced safety features, and a smooth ride, perfect for family outings.",
+    "numOfRatings": 45,
+    "ratingsAverage": 4.8,
+    "sellers": [
+      {
+        "storeName": "Portland Hyundai Center",
+        "location": "Portland",
+        "price": 32000,
+        "telNumber": "+1 503-555-1234"
+      },
+      {
+        "storeName": "Vegas Hyundai Hub",
+        "location": "Las Vegas",
+        "price": 31500,
+        "website": "https://lasvegas-hyundai.com"
+      },
+      {
+        "storeName": "Baltimore Hyundai Sales",
+        "location": "Baltimore",
+        "price": 31000,
+        "website": "https://baltimore-hyundai.com"
+      }
+    ],
+    "minPrice": 31000
+  },
+  {
+    "manufacturer": "Honda",
+    "model": "Civic",
+    "releaseYear": 2018,
+    "description": "The 2018 Honda Civic is known for its sporty handling, fuel efficiency, and reliable performance, making it a popular choice among compact cars.",
+    "numOfRatings": 50,
+    "ratingsAverage": 4.5,
+    "sellers": [
+      {
+        "storeName": "Louisville Honda Center",
+        "location": "Louisville",
+        "price": 21000,
+        "website": "https://louisville-honda.com"
+      },
+      {
+        "storeName": "Milwaukee Honda Hub",
+        "location": "Milwaukee",
+        "price": 20500,
+        "telNumber": "+1 414-555-5678"
+      },
+      {
+        "storeName": "Albuquerque Honda Sales",
+        "location": "Albuquerque",
+        "price": 20800,
+        "telNumber": "+1 505-555-7890"
+      }
+    ],
+    "minPrice": 20500
+  },
+  {
+    "manufacturer": "Honda",
+    "model": "Accord",
+    "releaseYear": 2019,
+    "description": "The 2019 Honda Accord combines a refined interior, strong performance, and advanced technology, offering a comfortable and enjoyable driving experience.",
+    "numOfRatings": 55,
+    "ratingsAverage": 4.6,
+    "sellers": [
+      {
+        "storeName": "Tucson Honda Hub",
+        "location": "Tucson",
+        "price": 25000,
+        "telNumber": "+1 520-555-1234"
+      },
+      {
+        "storeName": "Fresno Honda Sales",
+        "location": "Fresno",
+        "price": 24500,
+        "website": "https://fresno-honda.com"
+      },
+      {
+        "storeName": "Sacramento Honda Center",
+        "location": "Sacramento",
+        "price": 24000,
+        "website": "https://sacramento-honda.com"
+      }
+    ],
+    "minPrice": 24000
+  },
+  {
+    "manufacturer": "Honda",
+    "model": "CR-V",
+    "releaseYear": 2020,
+    "description": "The 2020 Honda CR-V provides a spacious interior, smooth ride, and advanced safety features, making it a great choice for families.",
+    "numOfRatings": 65,
+    "ratingsAverage": 4.7,
+    "sellers": [
+      {
+        "storeName": "Mesa Honda Sales",
+        "location": "Mesa",
+        "price": 28000,
+        "website": "https://mesa-honda.com"
+      },
+      {
+        "storeName": "Atlanta Honda Center",
+        "location": "Atlanta",
+        "price": 27500,
+        "telNumber": "+1 404-555-5678"
+      },
+      {
+        "storeName": "Kansas City Honda Hub",
+        "location": "Kansas City",
+        "price": 27000,
+        "telNumber": "+1 816-555-7890"
+      }
+    ],
+    "minPrice": 27000
+  }
+]
