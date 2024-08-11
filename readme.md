@@ -1,5 +1,3 @@
-A website for showing information about cars and also showing sellers available for each car along with
-their provided price and contact information.
+A website for displaying information about cars, including available sellers for each car along with their prices and contact information.
 
-Currently the API has been built and ready to use. Frontend part of the application is on development
-and the ready parts of the frontend are located in the "public" directory.
+Currently, the API has been built and is ready for use. The frontend part of the application is under development, and the completed portions are located in the "public" directory.
