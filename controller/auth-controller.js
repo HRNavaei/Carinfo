@@ -99,8 +99,6 @@ exports.protect = catchAsync(async (req, res, next) => {
   if (tokenHeader && tokenHeader.startsWith('Bearer ')) {
     token = tokenHeader.split(' ')[1];
   } else {
-    console.log('here1');
-    console.log(tokenHeader);
     throw new OperationalError('NOT_LOGGED_IN');
   }
 
@@ -110,7 +108,6 @@ exports.protect = catchAsync(async (req, res, next) => {
     decodedToken = await promisify(jwt.verify)(token, process.env.JWT_SECRET);
   } catch (err) {
     if (err.name === 'JsonWebTokenError') {
-      console.log('here2');
       throw new OperationalError('NOT_LOGGED_IN');
     }
     if (err.name === 'TokenExpiredError')

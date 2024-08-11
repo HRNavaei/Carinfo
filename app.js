@@ -3,6 +3,8 @@ const morgan = require('morgan');
 const hpp = require('hpp');
 const path = require('path');
 const cors = require('cors');
+const compression = require('compression');
+
 const carRoutes = require('./routes/car-routes');
 const userRoutes = require('./routes/user-routes');
 const errController = require('./utils/err-controller');
@@ -41,6 +43,9 @@ app.use(
     ],
   })
 );
+
+// Compressin the response
+app.use(compression());
 
 // Body parser
 app.use(express.json());

@@ -9,16 +9,13 @@ async function fetchCarModels() {
 
   try {
     // Fetch data from the API with query parameters
-    const response = await fetch(
-      `http://127.0.0.1:3000/api/v1/cars?${queryString}`,
-      {
-        method: 'GET',
-        headers: {
-          Authorization: `Bearer ${token}`, // Attach the token
-          'Content-Type': 'application/json',
-        },
-      }
-    );
+    const response = await fetch(`/api/v1/cars?${queryString}`, {
+      method: 'GET',
+      headers: {
+        Authorization: `Bearer ${token}`, // Attach the token
+        'Content-Type': 'application/json',
+      },
+    });
 
     const data = await response.json();
 

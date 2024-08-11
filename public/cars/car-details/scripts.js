@@ -5,7 +5,7 @@ async function fetchCarDetails() {
   console.log(carId);
   try {
     // Fetch data from the API
-    const response = await fetch(`http://127.0.0.1:3000/api/v1/cars/${carId}`, {
+    const response = await fetch(`/api/v1/cars/${carId}`, {
       method: 'GET',
       headers: {
         Authorization: `Bearer ${localStorage.getItem('authToken')}`, // Get token from localStorage
