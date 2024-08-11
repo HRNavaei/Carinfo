@@ -7,6 +7,7 @@ const carRoutes = require('./routes/car-routes');
 const userRoutes = require('./routes/user-routes');
 const errController = require('./utils/err-controller');
 
+// Start using express.js
 const app = express();
 
 // Development logging
