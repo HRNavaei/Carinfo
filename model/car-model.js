@@ -127,7 +127,7 @@ carSchema.virtual('image').get(function () {
   model = model.replace(/ /g, '-');
   releaseYear = releaseYear;
 
-  return `http://${process.env.URL}:${process.env.PORT}/cars/images/${manufacturer}_${model}_${releaseYear}.jpg`;
+  return `${process.env.PROTOCOL}://${process.env.HOST}/cars/images/${manufacturer}_${model}_${releaseYear}.jpg`;
 });
 
 carSchema.methods.findSellerById = function (id) {
