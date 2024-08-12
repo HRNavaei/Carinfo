@@ -18,7 +18,7 @@ if (process.env.NODE_ENV === 'development') app.use(morgan('dev'));
 // Setting URL in environment variables
 app.use((req, res, next) => {
   process.env.PROTOCOL = req.protocol;
-  process.env.HOST = req.et('host');
+  process.env.HOST = req.get('host');
   next();
 });
 
