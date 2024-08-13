@@ -11,7 +11,7 @@ exports.signUp = catchAsync(async (req, res, next) => {
     email: req.body.email,
     password: req.body.password,
     passwordConfirm: req.body.passwordConfirm,
-    role: 'blah',
+    role: 'user',
   };
 
   // 2. Save the user document in the database
