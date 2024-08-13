@@ -52,7 +52,7 @@ exports.changeRole = catchAsync(async (req, res, next) => {
   });
 });
 
-// All users features
+// Features for all types of user
 exports.getMyProfile = catchAsync(async (req, res, next) => {
   const user = {
     name: req.user.name,
