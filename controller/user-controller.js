@@ -3,7 +3,7 @@ const User = require('./../model/user-model');
 const catchAsync = require('./../utils/catch-async');
 const QueryFeatures = require('./../utils/QueryFeatures');
 
-// Admin features
+// Admin specific features
 exports.getUserList = catchAsync(async (req, res, next) => {
   const queryFeatures = new QueryFeatures(req.query, User.find());
   queryFeatures.filter().project().sort().paginate();
@@ -52,7 +52,7 @@ exports.changeRole = catchAsync(async (req, res, next) => {
   });
 });
 
-// User features
+// All users features
 exports.getMyProfile = catchAsync(async (req, res, next) => {
   const user = {
     name: req.user.name,
