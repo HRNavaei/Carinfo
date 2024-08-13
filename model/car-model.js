@@ -1,4 +1,5 @@
 const mongoose = require('mongoose');
+const sharedConfig = require('./../utils/shared-config');
 
 const sellerSchema = new mongoose.Schema(
   {
@@ -127,7 +128,10 @@ carSchema.virtual('image').get(function () {
   model = model.replace(/ /g, '-');
   releaseYear = releaseYear;
 
-  return `${process.env.PROTOCOL}://${process.env.HOST}/cars/images/${manufacturer}_${model}_${releaseYear}.jpg`;
+  const protocol = sharedConfig.getConfig('protocol');
+  const host = sharedConfig.getConfig('host');
+
+  return `${protocol}://${host}/cars/images/${manufacturer}_${model}_${releaseYear}.jpg`;
 });
 
 carSchema.methods.findSellerById = function (id) {

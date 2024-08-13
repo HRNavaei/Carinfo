@@ -84,3 +84,16 @@ body {
   color: #666;
   margin-top: 4px;
 }
+
+.info-message {
+  text-align: center;
+  margin: 20px;
+  font-size: 18px;
+}
+.info-message a {
+  color: #007bff;
+  text-decoration: none;
+}
+.info-message a:hover {
+  text-decoration: underline;
+}

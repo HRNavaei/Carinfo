@@ -31,7 +31,7 @@ module.exports = class QueryFeatures {
     let { fields } = this.reqQuery;
 
     if (fields) {
-      // replacing ',' with ' ' in the value of sort param
+      // replacing ',' with ' ' in the value of fields param
       fields = fields.replace(/,/g, ' ');
 
       this.dbQuery.select(fields);

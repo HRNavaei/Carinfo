@@ -30,7 +30,6 @@ exports.addCar = catchAsync(async (req, res, next) => {
 exports.getAllCars = catchAsync(async (req, res, next) => {
   const queryFeatures = new QueryFeatures(req.query, Car.find())
     .filter()
-    .project()
     .sort()
     .paginate();
 
@@ -51,7 +50,11 @@ exports.getCar = catchAsync(async (req, res, next) => {
   if (!areIdsValid(carId)) throw new OperationalError('INVALID_URL');
 
   const car = await Car.findById(carId);
+
   if (!car) throw new OperationalError('CAR_NOT_FOUND');
+
+  car.reqProtocol = req.protocol;
+  car.reqHost = req.get('host');
 
   const carObj = car.toObject();
   delete carObj.link;

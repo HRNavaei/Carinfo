@@ -8,6 +8,7 @@ const compression = require('compression');
 const carRoutes = require('./routes/car-routes');
 const userRoutes = require('./routes/user-routes');
 const errController = require('./utils/err-controller');
+const sharedConfig = require('./utils/shared-config');
 
 // Start using express.js
 const app = express();
@@ -17,8 +18,8 @@ if (process.env.NODE_ENV === 'development') app.use(morgan('dev'));
 
 // Setting URL related variables as environment variables
 app.use((req, res, next) => {
-  process.env.PROTOCOL = req.protocol;
-  process.env.HOST = req.get('host');
+  sharedConfig.setConfig('protocol', req.protocol);
+  sharedConfig.setConfig('host', req.get('host'));
   next();
 });
 
@@ -60,6 +61,11 @@ app.use(express.json());
 // Routes
 app.use('/api/v1/cars', carRoutes);
 app.use('/api/v1/users', userRoutes);
+
+// Rdirect the root route to car models page
+app.use('/', (req, res, next) => {
+  res.redirect('/cars');
+});
 
 // Undefined routes
 app.use('*', (req, res, next) => {
