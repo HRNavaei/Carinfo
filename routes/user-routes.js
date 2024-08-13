@@ -2,6 +2,14 @@ const router = require('express').Router();
 const authController = require('./../controller/auth-controller');
 const userController = require('./../controller/user-controller');
 
+router
+  .route('/')
+  .get(
+    authController.protect,
+    authController.restrictTo('admin'),
+    userController.getUserList
+  );
+
 router.route('/sign-up').post(authController.signUp);
 
 router.route('/sign-in').post(authController.signIn);
@@ -15,12 +23,8 @@ router
   );
 
 router
-  .route('/')
-  .get(
-    authController.protect,
-    authController.restrictTo('admin'),
-    userController.getUserList
-  );
+  .route('/my-profile')
+  .get(authController.protect, userController.getMyProfile);
 
 router
   .route('/:id')
