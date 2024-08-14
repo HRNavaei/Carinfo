@@ -4,7 +4,8 @@
   "description": "A website for showing informatin about cars",
   "main": "server.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "start": "node server.js",
+    "start:prod": "nodemon server.js"
   },
   "author": "HRNavaei",
   "license": "ISC",
