@@ -19,10 +19,16 @@ exports.addCar = catchAsync(async (req, res, next) => {
     throw err;
   }
 
+  const carObj = car.toObject();
+  delete carObj.ratingsAverage;
+  delete carObj.numOfRatings;
+  delete carObj.minPrice;
+  delete carObj.sellers;
+
   res.status(201).json({
     status: 'success',
     data: {
-      car,
+      carObj,
     },
   });
 });
@@ -47,7 +53,7 @@ exports.getAllCars = catchAsync(async (req, res, next) => {
 
 exports.getCar = catchAsync(async (req, res, next) => {
   const carId = req.params.id;
-  if (!areIdsValid(carId)) throw new OperationalError('INVALID_URL');
+  if (!areIdsValid(carId)) throw new OperationalError('INVALID_PATH_PARAM');
 
   const car = await Car.findById(carId);
 
@@ -69,7 +75,7 @@ exports.getCar = catchAsync(async (req, res, next) => {
 
 exports.updateCar = catchAsync(async (req, res, next) => {
   const carId = req.params.id;
-  if (!areIdsValid(carId)) throw new OperationalError('INVALID_URL');
+  if (!areIdsValid(carId)) throw new OperationalError('INVALID_PATH_PARAM');
 
   let updatedCar;
   try {
@@ -93,7 +99,7 @@ exports.updateCar = catchAsync(async (req, res, next) => {
 
 exports.deleteCar = catchAsync(async (req, res, next) => {
   const carId = req.params.id;
-  if (!areIdsValid(carId)) throw new OperationalError('INVALID_URL');
+  if (!areIdsValid(carId)) throw new OperationalError('INVALID_PATH_PARAM');
 
   const car = await Car.findByIdAndDelete(carId);
   if (!car) throw new OperationalError('CAR_NOT_FOUND');
@@ -174,7 +180,7 @@ exports.getAvailableCars = catchAsync(async (req, res, next) => {
   }
 
   // Creating the pagination stage
-  let limit = queryParams.limit * 1 || 6;
+  let limit = queryParams.limit * 1 || 9;
 
   let page = queryParams.page * 1 || 1;
 
@@ -196,7 +202,7 @@ exports.getAvailableCars = catchAsync(async (req, res, next) => {
 exports.addSeller = catchAsync(async (req, res, next) => {
   // 1. Get the id of associated car and check if it is valid
   const carId = req.params.id;
-  if (!areIdsValid(carId, sellerId)) throw new OperationalError('INVALID_URL');
+  if (!areIdsValid(carId)) throw new OperationalError('INVALID_PATH_PARAM');
 
   // 2. Update the car by pushing the new seller to its sellers array property
   const updatedCar = await Car.findByIdAndUpdate(
@@ -209,6 +215,11 @@ exports.addSeller = catchAsync(async (req, res, next) => {
       runValidators: true,
     }
   );
+
+  // 3. Check if a car with provided ID exists
+  if (!updatedCar) {
+    throw new OperationalError('CAR_NOT_FOUND');
+  }
 
   // 3. Fetch the newly created seller from database
   const newSeller = updatedCar.findSellerByStoreNameAndLocation(
@@ -233,7 +244,8 @@ exports.deleteSeller = catchAsync(async (req, res, next) => {
   // 1. Get the car id and seller id and check if they are valid
   const carId = req.params.carId;
   const sellerId = req.params.sellerId;
-  if (!areIdsValid(carId, sellerId)) throw new OperationalError('INVALID_URL');
+  if (!areIdsValid(carId, sellerId))
+    throw new OperationalError('INVALID_PATH_PARAM');
 
   // 2. Fetch the associated car from database and check if it is existed
   const car = await Car.findById(carId);
@@ -262,7 +274,8 @@ exports.updateSeller = catchAsync(async (req, res, next) => {
   // 1. Get the car id and seller id and check if they are valid
   const carId = req.params.carId;
   const sellerId = req.params.sellerId;
-  if (!areIdsValid(carId, sellerId)) throw new OperationalError('INVALID_URL');
+  if (!areIdsValid(carId, sellerId))
+    throw new OperationalError('INVALID_PATH_PARAM');
 
   // 2. Declare the update object to be placed in the update method in the next step
   const sellerUpdateObj = {};
@@ -303,7 +316,7 @@ exports.updateSeller = catchAsync(async (req, res, next) => {
   });
 });
 
-// Functions used in the middlewares
+// Functions used in this file
 function areIdsValid(...idArr) {
   for (const id of idArr)
     if (!mongoose.Types.ObjectId.isValid(id)) return false;

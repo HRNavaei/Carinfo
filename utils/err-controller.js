@@ -9,9 +9,17 @@ module.exports = (err, req, res, next) => {
   let revisedErr = err;
   if (!err.isOperational) {
     // Check if the error should be revised to an operational one
+    const exclusionErrMsgRegex =
+      /Cannot do exclusion on field \w+ in inclusion projection/;
 
     if (err.name === 'ValidationError') {
       revisedErr = handleValidationError(err);
+    }
+    if (
+      err.name === 'MongoServerError' &&
+      exclusionErrMsgRegex.test(err.message)
+    ) {
+      revisedErr = handleExclusionError(err);
     } else {
       /*
        * Reaching here means that the error is a programming or
@@ -19,8 +27,9 @@ module.exports = (err, req, res, next) => {
        */
 
       const resObj = { status: 'error' };
-      if (process.env.NODE_ENV === 'development') resObj.err1 = 'err';
-      else resObj.message = 'Initial error';
+      if (process.env.NODE_ENV === 'development') {
+        resObj.err = err.message;
+      } else resObj.message = 'Initial error';
 
       return res.status(500).json(resObj);
     }
@@ -53,4 +62,8 @@ function handleValidationError(err) {
   });
 
   return validationErr;
+}
+
+function handleExclusionError(err) {
+  return new OperationalError('INVALID_QUERY_PARAM');
 }

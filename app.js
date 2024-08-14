@@ -63,7 +63,7 @@ app.use('/api/v1/cars', carRoutes);
 app.use('/api/v1/users', userRoutes);
 
 // Rdirect the root route to car models page
-app.use('/', (req, res, next) => {
+app.get('/', (req, res, next) => {
   res.redirect('/cars');
 });
 

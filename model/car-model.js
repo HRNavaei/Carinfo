@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 const sharedConfig = require('./../utils/shared-config');
+const fs = require('fs');
+const path = require('path');
 
 const sellerSchema = new mongoose.Schema(
   {
@@ -121,7 +123,7 @@ const carSchema = new mongoose.Schema(
 carSchema.index({ manufacturer: 1, model: 1, releaseYear: 1 }, { unique: 1 });
 
 carSchema.virtual('image').get(function () {
-  // Putting the link to the car image
+  // Putting the link to the car image in the car document
   let { manufacturer, model, releaseYear } = this;
 
   manufacturer = manufacturer.replace(/ /g, '-');
@@ -131,7 +133,13 @@ carSchema.virtual('image').get(function () {
   const protocol = sharedConfig.getConfig('protocol');
   const host = sharedConfig.getConfig('host');
 
-  return `${protocol}://${host}/cars/images/${manufacturer}_${model}_${releaseYear}.jpg`;
+  const imageLocalAddress = `cars/images/${manufacturer}_${model}_${releaseYear}.jpg`;
+  const imageAddress = `${protocol}://${host}/${imageLocalAddress}`;
+  const noImageAddress = `${protocol}://${host}/cars/images/no-image.png`;
+
+  if (fs.existsSync(`${__dirname}/../public/${imageLocalAddress}`))
+    return imageAddress;
+  else return noImageAddress;
 });
 
 carSchema.methods.findSellerById = function (id) {

@@ -29,7 +29,14 @@ const errorCodes = {
   },
   CAR_NOT_FOUND: { statusCode: 404, message: 'Car not found.' },
   SELLER_NOT_FOUND: { statusCode: 404, message: 'Seller not found.' },
-  INVALID_URL: { statusCode: 400, message: 'Invalid URL.' },
+  INVALID_PATH_PARAM: {
+    statusCode: 400,
+    message: 'Invalid parameter passed as a path parameter.',
+  },
+  INVALID_QUERY_PARAM: {
+    statusCode: 400,
+    message: 'Invalid parameter passed as a query parameter.',
+  },
   ACCESS_DENIED: { statusCode: 401, message: 'You can not access this path.' },
   INVALID_ROLE: { statusCode: 400, message: 'The entered role is invalid.' },
 };
