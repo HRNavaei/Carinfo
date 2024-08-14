@@ -8,7 +8,7 @@ You can check the API Documentation [here](https://documenter.getpostman.com/vie
 
 ---
 
-برای تست API، نرم افزار Postman را از [اینجا]https://www.postman.com/downloads/) نصب کرده و سپس لینک داکیومنتیشن بالا را باز کنید. در بالا سمت راست روی Run in Postman کلیک کنید و گزینه دوم را انتخاب کنید تا تمام درخواست ها وارد نرم افزار Postman شود. درون نرم افزار،
+برای تست API، نرم افزار Postman را از [اینجا](https://www.postman.com/downloads/) نصب کرده و سپس لینک داکیومنتیشن بالا را باز کنید. در بالا سمت راست روی Run in Postman کلیک کنید و گزینه دوم را انتخاب کنید تا تمام درخواست ها وارد نرم افزار Postman شود. درون نرم افزار،
 از بالا سمت راست روی گزینه No environment کلیک کرده و گزینه Production را انتخاب نمائید.
 حال می توانید از تمام امکانات API استفاده کنید.
 
