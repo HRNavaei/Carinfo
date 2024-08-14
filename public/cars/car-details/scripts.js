@@ -2,13 +2,17 @@
 async function fetchCarDetails() {
   const urlParams = new URLSearchParams(window.location.search);
   const carId = urlParams.get('id'); // Extract the 'id' query parameter
-  console.log(carId);
+
   try {
+    // The token should originally be obtained from the client's browser local storage. This is a temporary approach.
+    const token =
+      'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YmM5ZGZmNzRhYTAwNDcwMzExNGVlZiIsImlhdCI6MTcyMzYzNzI0OH0.XELj11valn1WOMP-8INF-DXrZQ55psEnYfGPTuDZlNM';
+
     // Fetch data from the API
     const response = await fetch(`/api/v1/cars/${carId}`, {
       method: 'GET',
       headers: {
-        Authorization: `Bearer ${localStorage.getItem('authToken')}`, // Get token from localStorage
+        Authorization: `Bearer ${token}`,
         'Content-Type': 'application/json',
       },
     });

@@ -1,11 +1,12 @@
 // Function to fetch car models and display them
 async function fetchCarModels() {
-  // Retrieve the token from localStorage
-  const token = localStorage.getItem('authToken');
-
   // Extract query parameters from the current URL
   const urlParams = new URLSearchParams(window.location.search);
   const queryString = urlParams.toString();
+
+  // The token should originally be obtained from the client's browser local storage. This is a temporary approach.
+  const token =
+    'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2YmM5ZGZmNzRhYTAwNDcwMzExNGVlZiIsImlhdCI6MTcyMzYzNzI0OH0.XELj11valn1WOMP-8INF-DXrZQ55psEnYfGPTuDZlNM';
 
   try {
     // Fetch data from the API with query parameters
