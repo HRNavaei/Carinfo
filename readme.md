@@ -2,11 +2,19 @@
 
 A website for showcasing cars, including details about sellers, such as their prices and contact information. It is similar to the Iranian website torob.com but is specifically focused on cars.
 
-Currently, the API has been built and is ready for use. The frontend part of the application is under development, with completed portions located in the "public" directory.
+Currently, the API has been built and is ready for use. The frontend part of the application is under development, with completed portions accessible in the "/public" directory.
 
 You can check the API Documentation [here](https://documenter.getpostman.com/view/35280116/2sA3s6FpuJ).
 
 ---
+
+# وب اپلیکیشن Carinfo
+
+وبسایتی برای نمایش اطلاعات خودرو ها و فروشندگان هر خودرو از جمله قیمت و راه ارتباطی با هر فروشنده. مشابه وبسایت ترب با این تفاوت که مخصوص خودرو می باشد.
+
+در حال حاضر، API وبسایت ایجاد شده و آماده استفاده است. بخش فرانت اند پروژه در حال توسعه است و قسمت های آماده آن در دایرکتوری "/public" در دسترس می باشد.
+
+داکیومنتیشن API در [اینجا](https://documenter.getpostman.com/view/35280116/2sA3s6FpuJ) می توانید مشاهده کنید.
 
 برای تست API، نرم افزار Postman را از [اینجا](https://www.postman.com/downloads/) نصب کرده و سپس لینک داکیومنتیشن بالا را باز کنید. در بالا سمت راست روی Run in Postman کلیک کنید و گزینه دوم را انتخاب کنید تا تمام درخواست ها وارد نرم افزار Postman شود. درون نرم افزار،
 از بالا سمت راست روی گزینه No environment کلیک کرده و گزینه Production را انتخاب نمائید.
