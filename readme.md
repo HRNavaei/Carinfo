@@ -6,6 +6,10 @@ Currently, the API has been built and is ready for use. The frontend part of the
 
 You can check the API Documentation [here](https://documenter.getpostman.com/view/35280116/2sA3s6FpuJ).
 
+You can install Postman on your device to easily test the API. After installing the software and logging in to your account, click on the 'Run in Postman' button on this page to import all the requests into Postman. You can then run each request and view the results.
+
+Important: After importing the collection into Postman, don’t forget to select the ‘production’ environment in the software. You can choose the desired environment from the menu in the top-right corner of the screen.
+
 ---
 
 # وب اپلیکیشن Carinfo
