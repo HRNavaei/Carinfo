@@ -9,6 +9,7 @@ module.exports = (err, req, res, next) => {
   let revisedErr = err;
   if (!err.isOperational) {
     // Check if the error should be revised to an operational one
+
     const exclusionErrMsgRegex =
       /Cannot do exclusion on field \w+ in inclusion projection/;
 
