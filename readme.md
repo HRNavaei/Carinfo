@@ -12,6 +12,8 @@ Currently, the API has been built and is ready for use. The frontend part of the
 
 You can check the API Documentation [here](https://documenter.getpostman.com/view/35280116/2sA3s6FpuJ).
 
+**How to test the API**
+
 You can [download](https://www.postman.com/downloads/) and install Postman on your device to easily test the API. After installing the software and logging in to your account, click on the 'Run in Postman' button on this page to import all the requests into Postman. You can then run each request and view the results.
 
 Important: After importing the collection into Postman, don’t forget to select the ‘production’ environment in the software. You can choose the desired environment from the menu in the top-right corner of the screen.
@@ -42,6 +44,8 @@ To log in as an admin:
 در حال حاضر، API وبسایت ایجاد شده و قابل استفاده است. بخش فرانت اند پروژه در حال توسعه است و قسمت های آماده آن در دایرکتوری "public/" در دسترس می باشد.
 
 داکیومنتیشن API را در [اینجا](https://documenter.getpostman.com/view/35280116/2sA3s6FpuJ) می توانید مشاهده کنید.
+
+**نحوه استفاده از API**
 
 برای تست API، نرم افزار Postman را از [اینجا](https://www.postman.com/downloads/) نصب کرده و سپس لینک داکیومنتیشن را باز کنید. در بالا سمت راست روی Run in Postman کلیک کرده و گزینه دوم را انتخاب کنید تا تمام درخواست ها وارد نرم افزار Postman شود. درون نرم افزار،
 از بالا سمت راست روی عبارت No environment کلیک کرده و گزینه Production را انتخاب کنید.
