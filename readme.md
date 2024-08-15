@@ -1,10 +1,8 @@
 # Carinfo Web Application
 
-Project address: [carinfo.infinicoder.ir](carinfo.infinicoder.ir)
+Project address: [carinfo.infinicoder.ir](http://carinfo.infinicoder.ir)
 
-<a href="https://carinfo.infinicoder.ir" style="text-decoration: none;">carinfo.infinicoder.ir</a>
-
-API address: [carinfo.infinicoder.ir/api/v1](carinfo.infinicoder.ir/api/v1)
+API address: [carinfo.infinicoder.ir/api/v1](http://carinfo.infinicoder.ir/api/v1)
 
 ##
 
