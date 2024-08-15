@@ -1,8 +1,8 @@
 # Carinfo Web Application
 
-Project address: [carinfo.infinicoder.ir](http://carinfo.infinicoder.ir)
+[Project Link](http://carinfo.infinicoder.ir)
 
-API address: [carinfo.infinicoder.ir/api/v1](http://carinfo.infinicoder.ir/api/v1)
+[Project API Link](http://carinfo.infinicoder.ir/api/v1)
 
 ##
 
@@ -31,9 +31,9 @@ To log in as an admin:
 
 # وب اپلیکیشن Carinfo
 
-آدرس پروژه دیپلوی شده: carinfo.infinicoder.ir
+[لینک پروژه](http://carinfo.infinicoder.ir)
 
-آدرس API پروژه: carinfo.infinicoder.ir/api/v1
+[لینک API پروژه](http://carinfo.infinicoder.ir/api/v1)
 
 وبسایتی برای نمایش اطلاعات خودرو ها و اطلاعات فروشندگان هر خودرو از جمله قیمت و راه ارتباطی با هر فروشنده. مشابه وبسایت ترب با این تفاوت که مخصوص خودرو است و امکانات ساده تری دارد.
 
