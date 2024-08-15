@@ -45,7 +45,7 @@ To log in as an admin:
 
 داکیومنتیشن API را در [اینجا](https://documenter.getpostman.com/view/35280116/2sA3s6FpuJ) می توانید مشاهده کنید.
 
-**نحوه استفاده از API**
+**نحوه تست API**
 
 برای تست API، نرم افزار Postman را از [اینجا](https://www.postman.com/downloads/) نصب کرده و سپس لینک داکیومنتیشن را باز کنید. در بالا سمت راست روی Run in Postman کلیک کرده و گزینه دوم را انتخاب کنید تا تمام درخواست ها وارد نرم افزار Postman شود. درون نرم افزار،
 از بالا سمت راست روی عبارت No environment کلیک کرده و گزینه Production را انتخاب کنید.
