@@ -1,11 +1,5 @@
 # Carinfo Web Application
 
-[Deployed Project](http://carinfo.infinicoder.ir)
-
-[Project API](http://carinfo.infinicoder.ir/api/v1)
-
-##
-
 A website for showcasing cars, including details about sellers, such as their prices and contact information. It is similar to the Iranian website torob.com but is specifically focused on cars.
 
 Currently, the API has been built and is ready for use. The frontend part of the application is under development, with completed portions accessible in the "/public" directory.
@@ -32,12 +26,6 @@ To log in as an admin:
 ---
 
 # وب اپلیکیشن Carinfo
-
-[پروژه دیپلوی شده](http://carinfo.infinicoder.ir)
-
-[API پروژه](http://carinfo.infinicoder.ir/api/v1)
-
-##
 
 وبسایتی برای نمایش اطلاعات خودرو ها و اطلاعات فروشندگان هر خودرو از جمله قیمت و راه ارتباطی با هر فروشنده. مشابه وبسایت ترب با این تفاوت که مخصوص خودرو است و امکانات ساده تری دارد.
 
