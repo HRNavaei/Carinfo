@@ -10,6 +10,17 @@ You can [download](https://www.postman.com/downloads/) and install Postman on yo
 
 Important: After importing the collection into Postman, don’t forget to select the ‘production’ environment in the software. You can choose the desired environment from the menu in the top-right corner of the screen.
 
+After loading the requests, use the Sign Up request to create your own account. You may sign in with existing accounts. To do that, open the Sign In request and use one of the following credentials:
+To log in as a regular user:
+
+- Email: public_user@gmail.com
+- Password: 123456
+
+To log in as an admin:
+
+- Email: public_admin@gmail.com
+- Password: 123456
+
 ---
 
 # وب اپلیکیشن Carinfo
