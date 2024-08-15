@@ -1,8 +1,8 @@
-# Carinfo Web Application
+## Carinfo Web Application
 
-[Project Link](http://carinfo.infinicoder.ir)
+[Deployed Project](http://carinfo.infinicoder.ir)
 
-[Project API Link](http://carinfo.infinicoder.ir/api/v1)
+[Project API](http://carinfo.infinicoder.ir/api/v1)
 
 ##
 
@@ -31,9 +31,9 @@ To log in as an admin:
 
 # وب اپلیکیشن Carinfo
 
-[لینک پروژه](http://carinfo.infinicoder.ir)
+[پروژه دیپلوی شده](http://carinfo.infinicoder.ir)
 
-[لینک API پروژه](http://carinfo.infinicoder.ir/api/v1)
+[API پروژه](http://carinfo.infinicoder.ir/api/v1)
 
 ##
 
