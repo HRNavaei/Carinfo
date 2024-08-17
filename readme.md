@@ -6,11 +6,9 @@ Currently, the API has been built and is ready for use. The frontend part of the
 
 You can check the API Documentation [here](https://documenter.getpostman.com/view/35280116/2sA3s6FpuJ).
 
-**How to test the API**
+**How to test the API**: You can [download](https://www.postman.com/downloads/) and install Postman on your device to easily test the API. After installing the software and logging in to your account, click on the 'Run in Postman' button on the documentaion page to import all the requests into Postman. You can then run each request and view the results.
 
-You can [download](https://www.postman.com/downloads/) and install Postman on your device to easily test the API. After installing the software and logging in to your account, click on the 'Run in Postman' button on this page to import all the requests into Postman. You can then run each request and view the results.
-
-Important: After importing the collection into Postman, don’t forget to select the ‘production’ environment in the software. You can choose the desired environment from the menu in the top-right corner of the screen.
+Important: After importing the collection into Postman, you should select the ‘production’ environment. To do that, click on the 'No environment' button in Postman and choose the option 'production' from the menu.
 
 After loading the requests, use the Sign Up request to create your own account. You may sign in with existing accounts. To do that, open the Sign In request and use one of the following credentials:
 To log in as a regular user:
